@@ -8,17 +8,17 @@ import SignInForm from './pages/auth/SignInForm';
 
 function App() {
   return (
-    <div className={styles.App}>
-     <NavBar />
-     <Container className={styles.Main}>
-      <Switch>
-        <Route exact path="/" render={() => <h1>Home page</h1>} />
-        <Route exact path="/Signin" render={() => <h1>Sign in</h1>} />
-        <Route exact path="/Signup" render={() => <SignUpForm />} />
-        <Route render={()=><p>Page not found !</p>} />
-      </Switch>
-     </Container>
-    </div>
+   <div className={styles.App}>
+    <NavBar />
+        <Container className={styles.Main}>
+          <Switch>
+            <Route exact path="/" render={() => <h1>Home page</h1>} />
+            <Route exact path="/Signin" render={() => <SignInForm />} />
+            <Route exact path="/Signup" render={() => <SignUpForm />} />
+            <Route render={()=><p>Page not found !</p>} />
+          </Switch>
+        </Container>
+        </div>
   );
 }
 
